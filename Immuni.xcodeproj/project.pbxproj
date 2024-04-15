@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC7C9B432BCD52850007512A /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC7C9B412BCD52850007512A /* UserData.xcdatamodeld */; };
+		CC7C9B452BCD529A0007512A /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C9B442BCD529A0007512A /* UserDataManager.swift */; };
+		CC7C9B472BCD538A0007512A /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C9B462BCD538A0007512A /* PersonalInfoView.swift */; };
+		CC7C9B492BCD5B9F0007512A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C9B482BCD5B9F0007512A /* LaunchView.swift */; };
+		CC7C9B4B2BCD5C2E0007512A /* UserMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C9B4A2BCD5C2E0007512A /* UserMainView.swift */; };
+		CC7C9B4D2BCD5C380007512A /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C9B4C2BCD5C380007512A /* AvatarView.swift */; };
+		CC7C9B4F2BCD5C410007512A /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C9B4E2BCD5C410007512A /* SettingView.swift */; };
 		CCBF69A12BCD36AE00774F3E /* ImmuniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF69A02BCD36AE00774F3E /* ImmuniApp.swift */; };
-		CCBF69A32BCD36AE00774F3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF69A22BCD36AE00774F3E /* ContentView.swift */; };
+		CCBF69A32BCD36AE00774F3E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF69A22BCD36AE00774F3E /* TabBarView.swift */; };
 		CCBF69A52BCD36B000774F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCBF69A42BCD36B000774F3E /* Assets.xcassets */; };
 		CCBF69A82BCD36B000774F3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCBF69A72BCD36B000774F3E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC7C9B422BCD52850007512A /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
+		CC7C9B442BCD529A0007512A /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		CC7C9B462BCD538A0007512A /* PersonalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
+		CC7C9B482BCD5B9F0007512A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		CC7C9B4A2BCD5C2E0007512A /* UserMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMainView.swift; sourceTree = "<group>"; };
+		CC7C9B4C2BCD5C380007512A /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		CC7C9B4E2BCD5C410007512A /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		CCBF699D2BCD36AE00774F3E /* Immuni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Immuni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBF69A02BCD36AE00774F3E /* ImmuniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmuniApp.swift; sourceTree = "<group>"; };
-		CCBF69A22BCD36AE00774F3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CCBF69A22BCD36AE00774F3E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		CCBF69A42BCD36B000774F3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCBF69A72BCD36B000774F3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +46,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC7C9B3C2BCD3C5E0007512A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C9B412BCD52850007512A /* UserData.xcdatamodeld */,
+				CC7C9B442BCD529A0007512A /* UserDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC7C9B3D2BCD3C660007512A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CCBF69A42BCD36B000774F3E /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		CC7C9B3E2BCD3CD20007512A /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				CCBF69A22BCD36AE00774F3E /* TabBarView.swift */,
+				CC7C9B4A2BCD5C2E0007512A /* UserMainView.swift */,
+				CC7C9B4C2BCD5C380007512A /* AvatarView.swift */,
+				CC7C9B4E2BCD5C410007512A /* SettingView.swift */,
+				CC7C9B402BCD4E5C0007512A /* UnderMainView */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		CC7C9B3F2BCD3D140007512A /* InitialView */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C9B482BCD5B9F0007512A /* LaunchView.swift */,
+				CC7C9B462BCD538A0007512A /* PersonalInfoView.swift */,
+			);
+			path = InitialView;
+			sourceTree = "<group>";
+		};
+		CC7C9B402BCD4E5C0007512A /* UnderMainView */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C9B522BCD5C850007512A /* Exercise */,
+				CC7C9B512BCD5C7F0007512A /* Condition */,
+				CC7C9B502BCD5C6F0007512A /* Info */,
+			);
+			path = UnderMainView;
+			sourceTree = "<group>";
+		};
+		CC7C9B502BCD5C6F0007512A /* Info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		CC7C9B512BCD5C7F0007512A /* Condition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Condition;
+			sourceTree = "<group>";
+		};
+		CC7C9B522BCD5C850007512A /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
 		CCBF69942BCD36AE00774F3E = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				CCBF69A02BCD36AE00774F3E /* ImmuniApp.swift */,
-				CCBF69A22BCD36AE00774F3E /* ContentView.swift */,
-				CCBF69A42BCD36B000774F3E /* Assets.xcassets */,
+				CC7C9B3D2BCD3C660007512A /* Support */,
+				CC7C9B3C2BCD3C5E0007512A /* Model */,
+				CC7C9B3F2BCD3D140007512A /* InitialView */,
+				CC7C9B3E2BCD3CD20007512A /* MainView */,
 				CCBF69A62BCD36B000774F3E /* Preview Content */,
 			);
 			path = Immuni;
@@ -137,7 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCBF69A32BCD36AE00774F3E /* ContentView.swift in Sources */,
+				CC7C9B472BCD538A0007512A /* PersonalInfoView.swift in Sources */,
+				CC7C9B492BCD5B9F0007512A /* LaunchView.swift in Sources */,
+				CC7C9B452BCD529A0007512A /* UserDataManager.swift in Sources */,
+				CC7C9B4F2BCD5C410007512A /* SettingView.swift in Sources */,
+				CC7C9B432BCD52850007512A /* UserData.xcdatamodeld in Sources */,
+				CC7C9B4B2BCD5C2E0007512A /* UserMainView.swift in Sources */,
+				CC7C9B4D2BCD5C380007512A /* AvatarView.swift in Sources */,
+				CCBF69A32BCD36AE00774F3E /* TabBarView.swift in Sources */,
 				CCBF69A12BCD36AE00774F3E /* ImmuniApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +434,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC7C9B412BCD52850007512A /* UserData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC7C9B422BCD52850007512A /* UserData.xcdatamodel */,
+			);
+			currentVersion = CC7C9B422BCD52850007512A /* UserData.xcdatamodel */;
+			path = UserData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CCBF69952BCD36AE00774F3E /* Project object */;
 }
