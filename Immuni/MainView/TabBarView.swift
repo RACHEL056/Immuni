@@ -1,24 +1,34 @@
+////
+////  ContentView.swift
+////  Immuni
+////
+////  Created by 박민정 on 4/15/24.
+////
 //
-//  ContentView.swift
-//  Immuni
+//import SwiftUI
 //
-//  Created by 박민정 on 4/15/24.
+//struct TabBarView: View {
+//    var body: some View {
+//        TabView {
+//            UserMainView(userInfo: userInfo)
+//                .tabItem {
+//                    Image(systemName: "checkmark.seal")
+//                    Text("Main")
+//                }
+//            AvatarView(userInfo: userInfo)
+//                .tabItem({
+//                    Image(systemName: "person")
+//                    Text("Avartar")
+//                })
+//            SettingView(userInfo: userInfo)
+//                .tabItem {
+//                    Image(systemName: "gearshape")
+//                    Text("Setting")
+//                }
+//        }
+//    }
+//}
 //
-
-import SwiftUI
-
-struct TabBarView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
-
-#Preview {
-    TabBarView()
-}
+////#Preview {
+////    TabBarView()
+////}
