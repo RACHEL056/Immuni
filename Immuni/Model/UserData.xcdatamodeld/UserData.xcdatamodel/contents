@@ -1,2 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier=""/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Exercise" representedClassName="Exercise" syncable="YES" codeGenerationType="class">
+        <attribute name="calories" optional="YES"/>
+        <attribute name="date" optional="YES"/>
+        <attribute name="name" optional="YES"/>
+        <attribute name="time" optional="YES"/>
+        <attribute name="type" optional="YES"/>
+        <relationship name="exerciseRecord" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfo" inverseName="userExercise" inverseEntity="UserInfo"/>
+    </entity>
+    <entity name="Fatigue" representedClassName="Fatigue" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES"/>
+        <attribute name="sleephour" optional="YES"/>
+        <attribute name="sleeptime" optional="YES"/>
+        <attribute name="stress" optional="YES"/>
+        <relationship name="fatigueRecord" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfo" inverseName="userFagtigue" inverseEntity="UserInfo"/>
+    </entity>
+    <entity name="Immunity" representedClassName="Immunity" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES"/>
+        <attribute name="range" optional="YES"/>
+        <relationship name="immunityRecord" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfo" inverseName="userImmune" inverseEntity="UserInfo"/>
+    </entity>
+    <entity name="UserInfo" representedClassName="UserInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES"/>
+        <attribute name="gender" optional="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="temperature" optional="YES"/>
+        <relationship name="userExercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="exerciseRecord" inverseEntity="Exercise"/>
+        <relationship name="userFagtigue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Fatigue" inverseName="fatigueRecord" inverseEntity="Fatigue"/>
+        <relationship name="userImmune" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Immunity" inverseName="immunityRecord" inverseEntity="Immunity"/>
+    </entity>
+</model>
